@@ -12,10 +12,16 @@
 
 h1 {
   color: #4AbDAC;
+  font-family: 'Noto Sans SC', sans-serif;
 
 }
 
 h3 {
   color: FC4A1A;
-  
+  font-family: 'Noto Sans SC', sans-serif;
+
+}
+
+h2 {
+  font-family: 'Noto Sans SC', sans-serif;
 }

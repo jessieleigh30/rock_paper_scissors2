@@ -37,39 +37,43 @@ function compare(){
       if(userChoice === computerResult) {
         result = "Tie!"
       } else if(userChoice === "scissors"){
-        result = "You Win!"
+        result = "You Lose!"
       } else {
-        result = "You lose."
+        result = "You Win."
       }
       break;
     case "scissors":
       if(userChoice === computerResult){
         result = "Tie!"
       } else if(userChoice === "rock"){
-        result = "You win!"
+        result = "You Win!"
       } else {
-        result = "You lose."
+        result = "You Lose."
       }
       break;
       case "paper":
         if(userChoice === computerResult){
           result = "Tie!"
         } else if(userChoice === "rock"){
-          result = "You lose."
+          result = "You Lose."
         } else {
-          result = "You win!"
+          result = "You Win!"
         }
         break;
       }
+      // displayComputerChoice ()
       displayResult()
   };
+
 
 function displayResult() {
    var resultContainer = document.body.querySelector("#result");
    resultContainer.innerHTML = result;
+   var choiceContainer = document.body.querySelector("#choice")
+   choiceContainer.innerHTML = `Computer chose ${computerResult}`;
 }
   
-//call another function we create to display result
+
 
   
   

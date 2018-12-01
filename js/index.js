@@ -53,7 +53,7 @@ function compare(){
       break;
       case "paper":
         if(userChoice === computerResult){
-          result = "Tie"
+          result = "Tie!"
         } else if(userChoice === "rock"){
           result = "You lose."
         } else {
@@ -67,7 +67,6 @@ function compare(){
 function displayResult() {
    var resultContainer = document.body.querySelector("#result");
    resultContainer.innerHTML = result;
-   resultContainer.style.color = "gray";
 }
   
 //call another function we create to display result

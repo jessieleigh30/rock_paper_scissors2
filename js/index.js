@@ -70,7 +70,7 @@ function displayResult() {
    var resultContainer = document.body.querySelector("#result");
    resultContainer.innerHTML = result;
    var choiceContainer = document.body.querySelector("#choice")
-   choiceContainer.innerHTML = `Computer chose ${computerResult}`;
+   choiceContainer.innerHTML = `Computer chose ${computerResult}.`;
 }
   
 

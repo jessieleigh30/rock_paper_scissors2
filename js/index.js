@@ -6,6 +6,8 @@ var result;
 
 
 
+
+
 var rock = document.body.querySelector(".rock");
 rock.addEventListener("click", function(){
   userChoice = "rock";
@@ -35,16 +37,18 @@ function compare(){
   switch(computerResult) {
     case "rock":
       if(userChoice === computerResult) {
-        result = "Tie!"
-      } else if(userChoice === "scissors"){
+        result = "It's a Tie!"
+       } else if(userChoice === "scissors"){
         result = "You Lose!"
+       
       } else {
         result = "You Win."
+      
       }
       break;
     case "scissors":
       if(userChoice === computerResult){
-        result = "Tie!"
+        result = "It's a Tie!"
       } else if(userChoice === "rock"){
         result = "You Win!"
       } else {
@@ -53,7 +57,7 @@ function compare(){
       break;
       case "paper":
         if(userChoice === computerResult){
-          result = "Tie!"
+          result = "It's a Tie!"
         } else if(userChoice === "rock"){
           result = "You Lose."
         } else {
@@ -63,15 +67,35 @@ function compare(){
       }
       // displayComputerChoice ()
       displayResult()
+      // setTimeout( displayResult, 2000 )
   };
 
 
+
 function displayResult() {
-   var resultContainer = document.body.querySelector("#result");
-   resultContainer.innerHTML = result;
+  const gameResult = () => {
+   var resultContainer = document.body.querySelector("#result")
+   resultContainer.innerHTML = result }
+
+   setTimeout(gameResult, 2000)
+
+   const userResult = () => {
+    var userChoiceContainer = document.body.querySelector("#userChoice")
+    userChoiceContainer.innerHTML = `You chose ${userChoice}.`}
+
+    setTimeout(userResult, 0)
+
+   const compResult = () => {
    var choiceContainer = document.body.querySelector("#choice")
-   choiceContainer.innerHTML = `Computer chose ${computerResult}.`;
+   choiceContainer.innerHTML = `Computer chose ${computerResult}.`}
+
+   setTimeout(compResult, 1000)
+
 }
+
+// function clear() {
+//   var clearAnswer = document.getElementById("clear").innerHTML = "Take Another Turn";
+// }
   
 
 

@@ -6,13 +6,14 @@
 .images {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
 }
 
 
 h1 {
   color: #4AbDAC;
   font-family: 'Noto Sans SC', sans-serif;
+  font-size: 4em;
 
 }
 

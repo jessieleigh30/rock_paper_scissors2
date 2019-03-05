@@ -3,6 +3,7 @@ var userChoice; //prompt("Welcome! Please click rock, paper or scissors.");
 var choice = ["rock", "paper", "scissors"];
 var computerResult;
 var result;
+var clear;
 
 
 
@@ -68,6 +69,7 @@ function compare(){
       // displayComputerChoice ()
       displayResult()
       // setTimeout( displayResult, 2000 )
+      // clearAnswer()
   };
 
 
@@ -78,6 +80,7 @@ function displayResult() {
    resultContainer.innerHTML = result }
 
    setTimeout(gameResult, 2000)
+  //  clearAnswer()
 
    const userResult = () => {
     var userChoiceContainer = document.body.querySelector("#userChoice")
@@ -90,12 +93,13 @@ function displayResult() {
    choiceContainer.innerHTML = `Computer chose ${computerResult}.`}
 
    setTimeout(compResult, 1000)
+   
 
-}
+  }
+    // function clearAnswer() {
+    //    document.getElementById("clear").innerHTML = "Take Another Turn";
+    //  }
 
-// function clear() {
-//   var clearAnswer = document.getElementById("clear").innerHTML = "Take Another Turn";
-// }
   
 
 

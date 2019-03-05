@@ -14,15 +14,32 @@ h1 {
   color: #4AbDAC;
   font-family: 'Noto Sans SC', sans-serif;
   font-size: 4em;
+  padding-top: 40px;
 
 }
 
 h3 {
-  color: FC4A1A;
+  color: #FC4A1A;
   font-family: 'Noto Sans SC', sans-serif;
 
 }
 
 h2 {
   font-family: 'Noto Sans SC', sans-serif;
+}
+
+h4 {
+  font-family: 'Noto Sans SC', sans-serif;
+  font-size: 5em;
+  justify-content: center;
+  padding-top: 200px;
+}
+
+.button2 {
+  background-color: #4AbDAC;
+  padding: 15px 32px;
+  color: #FC4A1A;
+  border: black;
+  font-family: 'Noto Sans SC', sans-serif;
+  font-size: 20px;
 }
